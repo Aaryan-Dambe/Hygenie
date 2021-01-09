@@ -1,0 +1,17 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+<h1> <bg> Hello {{name}}</h1>
+
+<form action="add" method="post">
+    {% csrf_token %}
+    <input type="text" placeholder="Enter your first digit" name='num1'><br>
+    <input type="text" placeholder="Enter your second digit"name='num2'><br>
+    <input type="submit">
+</form>
+{% endblock %}
+
+
+
+
+
